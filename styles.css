@@ -2,19 +2,25 @@
     box-sizing: border-box;
 }
 :root {
-    --grid-cols: 1;
-    --grid-rows: 1;
+    --grid-cols: 16;
+    --grid-rows: 16;
 }
   
-.container {
+.board {
+    height: 650px;
+    width: 700px;
     display: grid;
-    grid-gap: 1em;
+    grid-gap: .2em;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: 2px solid rgb(15, 2, 2);
+    align-items: center;
+    margin-left: 26%;
 }
   
 .grid-item {
-    padding: 1em;
-    border: 1px solid #ddd;
+    height: 100%;
+    width: 100%;
+    border: .0089px solid rgb(21, 5, 5);
     text-align: center;
 }
