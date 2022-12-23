@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --grid-cols: 16;
+    --grid-rows: 16;
+}
+  
+.board {
+    height: 650px;
+    width: 700px;
+    display: grid;
+    grid-gap: .2em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: 2px solid rgb(15, 2, 2);
+    align-items: center;
+    margin-left: 26%;
+}
+  
+.grid-item {
+    height: 100%;
+    width: 100%;
+    border: .0089px solid rgb(21, 5, 5);
+    text-align: center;
+}
